@@ -14,7 +14,7 @@
 
 <http://emmo.info/LabNotebookAppOntology> rdf:type owl:Ontology ;
                                            owl:versionIRI <http://emmo.info/LabNotebookAppOntology/0.1.0> ;
-                                           owl:imports <http://emmo.info/BattINFO/0.1.0> ;
+                                           owl:imports <https://big-map.github.io/BattINFO/ontology/BattINFO/0.1.0> ;
                                            dcterms:abstract """Labnotebook ontology.
 
 Released under the Creative Commons license Attribution 4.0 International (CC BY 4.0).""" ;
@@ -37,6 +37,18 @@ dcterms:license rdf:type owl:AnnotationProperty .
 #    Classes
 #################################################################
 
+###  http://emmo.info/BattINFO#EMMO_aafe33ca_3fe3_4ff0_bed0_e7c925e26eba
+<http://emmo.info/BattINFO#EMMO_aafe33ca_3fe3_4ff0_bed0_e7c925e26eba> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty emmo:EMMO_16b510a6_0584_4134_bdb6_3bc185c17860 ;
+                                                                                        owl:hasValue :EMMO_405dd1bc_8f22_41ad_9a17_e82946d91494
+                                                                                      ] ,
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty emmo:EMMO_16b510a6_0584_4134_bdb6_3bc185c17860 ;
+                                                                                        owl:hasValue :EMMO_6c1725c6_4c38_4774_8e39_1f3e76556359
+                                                                                      ] .
+
+
 ###  http://emmo.info/LabNotebookAppOntology#EMMO_11678b27_0c12_46d4_a0f4_c20e1df6084f
 :EMMO_11678b27_0c12_46d4_a0f4_c20e1df6084f rdf:type owl:Class ;
                                            rdfs:subClassOf emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 ,
@@ -52,6 +64,31 @@ dcterms:license rdf:type owl:AnnotationProperty .
                                            skos:prefLabel "Date"@en .
 
 
+###  http://emmo.info/LabNotebookAppOntology#EMMO_1dbf016a_96a6_44be_9512_53352c233058
+:EMMO_1dbf016a_96a6_44be_9512_53352c233058 rdf:type owl:Class ;
+                                           rdfs:subClassOf <https://big-map.github.io/BattINFO/ontology/electrochemistry/electrochemicalquantities#EMMO_54e8cef6_b4cb_4560_947a_50811fa0f177> ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 ;
+                                                             owl:someValuesFrom :EMMO_2a62748d_fd28_4c5b_88bb_fa583780bf82
+                                                           ] ;
+                                           skos:prefLabel "BatteryCellElectrolyteVolume"@en .
+
+
+###  http://emmo.info/LabNotebookAppOntology#EMMO_2a62748d_fd28_4c5b_88bb_fa583780bf82
+:EMMO_2a62748d_fd28_4c5b_88bb_fa583780bf82 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                             owl:someValuesFrom emmo:EMMO_9141801c_c539_4c72_b423_8c74ff6b8f05
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass emmo:EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae
+                                                           ] ;
+                                           skos:prefLabel "CubicCentimetre"@en .
+
+
 ###  http://emmo.info/LabNotebookAppOntology#EMMO_46824062_cced_46c5_89ed_f214a5e7c245
 :EMMO_46824062_cced_46c5_89ed_f214a5e7c245 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_11678b27_0c12_46d4_a0f4_c20e1df6084f ;
@@ -62,6 +99,57 @@ dcterms:license rdf:type owl:AnnotationProperty .
 :EMMO_5538a30d_1e16_41fd_8e90_009aa53d07db rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_11678b27_0c12_46d4_a0f4_c20e1df6084f ;
                                            skos:prefLabel "StartDate"@en .
+
+
+###  http://emmo.info/LabNotebookAppOntology#EMMO_67064447_41e7_42b2_8b58_7a3db87eece7
+:EMMO_67064447_41e7_42b2_8b58_7a3db87eece7 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                             owl:someValuesFrom emmo:EMMO_b3600e73_3e05_479d_9714_c041c3acf5cc
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7
+                                                           ] ;
+                                           skos:prefLabel "Millimetre"@en .
+
+
+###  http://emmo.info/emmo#EMMO_12e2f253_caeb_4e3c_9749_edb3683ab732
+emmo:EMMO_12e2f253_caeb_4e3c_9749_edb3683ab732 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty emmo:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 ;
+                                                                 owl:someValuesFrom :EMMO_67064447_41e7_42b2_8b58_7a3db87eece7
+                                                               ] .
+
+
+###  http://emmo.info/emmo#EMMO_ebcd70ca_c439_46ab_8bcc_c77b3930d9d9
+emmo:EMMO_ebcd70ca_c439_46ab_8bcc_c77b3930d9d9 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty emmo:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 ;
+                                                                 owl:someValuesFrom :EMMO_67064447_41e7_42b2_8b58_7a3db87eece7
+                                                               ] .
+
+
+###  https://big-map.github.io/BattINFO/ontology/electrochemistry/electrochemicalquantities#EMMO_54e8cef6_b4cb_4560_947a_50811fa0f177
+<https://big-map.github.io/BattINFO/ontology/electrochemistry/electrochemicalquantities#EMMO_54e8cef6_b4cb_4560_947a_50811fa0f177> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://emmo.info/LabNotebookAppOntology#EMMO_405dd1bc_8f22_41ad_9a17_e82946d91494
+:EMMO_405dd1bc_8f22_41ad_9a17_e82946d91494 rdf:type owl:NamedIndividual ,
+                                                    emmo:EMMO_12e2f253_caeb_4e3c_9749_edb3683ab732 ;
+                                           emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 "65.0"^^xsd:double ;
+                                           skos:prefLabel "cylindrical_18650_cell_nominal_height"@en .
+
+
+###  http://emmo.info/LabNotebookAppOntology#EMMO_6c1725c6_4c38_4774_8e39_1f3e76556359
+:EMMO_6c1725c6_4c38_4774_8e39_1f3e76556359 rdf:type owl:NamedIndividual ,
+                                                    emmo:EMMO_ebcd70ca_c439_46ab_8bcc_c77b3930d9d9 ;
+                                           emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 "18.0"^^xsd:double ;
+                                           skos:prefLabel "cylindrical_18650_cell_nominal_diameter"@en .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
