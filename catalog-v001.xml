@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="https://big-map.github.io/BattINFO/ontology/BattINFO/0.1.0" uri="file:/C:/Users/simonc/Documents/GitHub/BattINFO/battinfo.ttl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=false, version=2" prefer="public" xml:base="">
         <uri name="http://emmo.info/LabNotebookAppOntology/0.1.0" uri="LabNotebookAppOntology.ttl"/>
         <uri name="https://big-map.github.io/BattINFO/ontology/BattINFO/0.1.0/battinfo.ttl" uri="../BattINFO/battinfo.ttl"/>
