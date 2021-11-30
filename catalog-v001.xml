@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=false, version=2" prefer="public" xml:base="">
-        <uri name="http://emmo.info/LabNotebookAppOntology/0.1.0" uri="LabNotebookAppOntology.ttl"/>
-        <uri name="https://big-map.github.io/BattINFO/ontology/BattINFO/0.1.0/battinfo.ttl" uri="../BattINFO/battinfo.ttl"/>
-        <uri name="https://big-map.github.io/BattINFO/ontology/emmo/1.0.0-beta/generic-concepts/generic-concepts.ttl" uri="../BattINFO/generic-concepts.ttl"/>
-        <uri name="https://big-map.github.io/BattINFO/ontology/electrochemistry/0.1.0/electrochemistry/electrochemistry.ttl" uri="../BattINFO/electrochemistry.ttl"/>
-        <uri name="https://big-map.github.io/BattINFO/ontology/electrochemistry/0.1.0/electrochemicalquantities/electrochemicalquantities.ttl" uri="../BattINFO/electrochemicalquantities.ttl"/>
-        <uri name="https://big-map.github.io/BattINFO/ontology/BattINFO/0.1.0/battery/battery.ttl" uri="../BattINFO/battery.ttl"/>
-        <uri name="https://big-map.github.io/BattINFO/ontology/BattINFO/0.1.0/batteryquantities/batteryquantities.ttl" uri="../BattINFO/batteryquantities.ttl"/>
+        <uri name="https://big-map.github.io/LabNotebookAppOntology/0.1.0" uri="LabNotebookAppOntology.ttl"/>
+        <uri name="https://big-map.github.io/BattINFO/ontology/BattINFO/0.1.0" uri="../BattINFO/battinfo.ttl"/>
+        <uri name="https://big-map.github.io/BattINFO/ontology/emmo/1.0.0-beta/generic-concepts" uri="../BattINFO/generic-concepts.ttl"/>
+        <uri name="https://big-map.github.io/BattINFO/ontology/electrochemistry/0.1.0/electrochemistry" uri="../BattINFO/electrochemistry.ttl"/>
+        <uri name="https://big-map.github.io/BattINFO/ontology/electrochemistry/0.1.0/electrochemicalquantities" uri="../BattINFO/electrochemicalquantities.ttl"/>
+        <uri name="https://big-map.github.io/BattINFO/ontology/BattINFO/0.1.0/battery" uri="../BattINFO/battery.ttl"/>
+        <uri name="https://big-map.github.io/BattINFO/ontology/BattINFO/0.1.0/batteryquantities" uri="../BattINFO/batteryquantities.ttl"/>
     </group>
 </catalog>

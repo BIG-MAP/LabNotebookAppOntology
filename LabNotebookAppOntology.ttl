@@ -9,7 +9,7 @@
 @prefix bigmap: <https://big-map.github.io/BattINFO/ontology/BattINFO> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix annotations: <http://emmo.info/emmo/top/annotations#> .
-@prefix electrochemistry: <http://emmo.info/electrochemistry#> .
+@prefix electrochemistry: <https://big-map.github.io/BattINFO/ontology/electrochemistry#> .
 @base <https://big-map.github.io/LabNotebookAppOntology> .
 
 <https://big-map.github.io/LabNotebookAppOntology> rdf:type owl:Ontology ;
