@@ -22,6 +22,9 @@ jobs:
         pip install -U setuptools wheel
         pip install -r requirements.txt
 
+    - name: Retrieve BattINFO
+      run: git clone -b LabNotebookAppOntology https://github.com/BIG-MAP/BattINFO.git ${GITHUB_WORKSPACE}/../BattINFO
+
     - name: Run EMMO Check
       run: |
         emmocheck --verbose --check-imported --url-from-catalog \
