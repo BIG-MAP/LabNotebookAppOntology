@@ -6,7 +6,7 @@
 @prefix emmo: <http://emmo.info/emmo#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix bigmap: <https://big-map.github.io/BattINFO/ontology/BattINFO> .
+@prefix bigmap: <https://big-map.github.io/BattINFO/ontology/BattINFO#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix annotations: <http://emmo.info/emmo/top/annotations#> .
 @prefix electrochemistry: <https://big-map.github.io/BattINFO/ontology/electrochemistry#> .
@@ -38,7 +38,7 @@ dcterms:license rdf:type owl:AnnotationProperty .
 #################################################################
 
 ###  https://big-map.github.io/BattINFO/ontology/BattINFO#EMMO_aafe33ca_3fe3_4ff0_bed0_e7c925e26eba
-<https://big-map.github.io/BattINFO/ontology/BattINFO#EMMO_aafe33ca_3fe3_4ff0_bed0_e7c925e26eba> rdf:type owl:Class ;
+bigmap:EMMO_aafe33ca_3fe3_4ff0_bed0_e7c925e26eba rdf:type owl:Class ;
                                                                       rdfs:subClassOf [ rdf:type owl:Restriction ;
                                                                                         owl:onProperty emmo:EMMO_16b510a6_0584_4134_bdb6_3bc185c17860 ;
                                                                                         owl:hasValue :EMMO_405dd1bc_8f22_41ad_9a17_e82946d91494
@@ -66,7 +66,7 @@ dcterms:license rdf:type owl:AnnotationProperty .
 
 ###  https://big-map.github.io/LabNotebookAppOntology#EMMO_1dbf016a_96a6_44be_9512_53352c233058
 :EMMO_1dbf016a_96a6_44be_9512_53352c233058 rdf:type owl:Class ;
-                                           rdfs:subClassOf <https://big-map.github.io/BattINFO/ontology/electrochemistry/electrochemicalquantities#EMMO_54e8cef6_b4cb_4560_947a_50811fa0f177> ,
+                                           rdfs:subClassOf electrochemistry:EMMO_54e8cef6_b4cb_4560_947a_50811fa0f177 ,
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty emmo:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 ;
                                                              owl:someValuesFrom :EMMO_2a62748d_fd28_4c5b_88bb_fa583780bf82
@@ -116,22 +116,18 @@ dcterms:license rdf:type owl:AnnotationProperty .
                                            skos:prefLabel "Millimetre"@en .
 
 
-###  https://big-map.github.io/BattINFO/ontology/emmo#EMMO_12e2f253_caeb_4e3c_9749_edb3683ab732
+###  http://emmo.info/emmo#EMMO_12e2f253_caeb_4e3c_9749_edb3683ab732
 emmo:EMMO_12e2f253_caeb_4e3c_9749_edb3683ab732 rdfs:subClassOf [ rdf:type owl:Restriction ;
                                                                  owl:onProperty emmo:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 ;
                                                                  owl:someValuesFrom :EMMO_67064447_41e7_42b2_8b58_7a3db87eece7
                                                                ] .
 
 
-###  https://big-map.github.io/BattINFO/ontology/emmo#EMMO_ebcd70ca_c439_46ab_8bcc_c77b3930d9d9
+###  http://emmo.info/emmo#EMMO_ebcd70ca_c439_46ab_8bcc_c77b3930d9d9
 emmo:EMMO_ebcd70ca_c439_46ab_8bcc_c77b3930d9d9 rdfs:subClassOf [ rdf:type owl:Restriction ;
                                                                  owl:onProperty emmo:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 ;
                                                                  owl:someValuesFrom :EMMO_67064447_41e7_42b2_8b58_7a3db87eece7
                                                                ] .
-
-
-###  https://big-map.github.io/BattINFO/ontology/electrochemistry/electrochemicalquantities#EMMO_54e8cef6_b4cb_4560_947a_50811fa0f177
-<https://big-map.github.io/BattINFO/ontology/electrochemistry/electrochemicalquantities#EMMO_54e8cef6_b4cb_4560_947a_50811fa0f177> rdf:type owl:Class .
 
 
 #################################################################
