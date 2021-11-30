@@ -13,13 +13,13 @@
 @base <https://big-map.github.io/LabNotebookAppOntology> .
 
 <https://big-map.github.io/LabNotebookAppOntology> rdf:type owl:Ontology ;
-                                           owl:versionIRI <https://big-map.github.io/LabNotebookAppOntology/0.1.0> ;
-                                           owl:imports <https://big-map.github.io/BattINFO/ontology/BattINFO/0.1.0/battinfo.ttl> ;
-                                           dcterms:abstract """Labnotebook ontology.
+                                                    owl:versionIRI <https://big-map.github.io/LabNotebookAppOntology/0.1.0> ;
+                                                    owl:imports <https://big-map.github.io/BattINFO/ontology/BattINFO/0.1.0/battinfo.ttl> ;
+                                                    dcterms:abstract """Labnotebook ontology.
 
 Released under the Creative Commons license Attribution 4.0 International (CC BY 4.0).""" ;
-                                           dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-                                           owl:versionInfo "0.1.0" .
+                                                    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+                                                    owl:versionInfo "0.1.0" .
 
 #################################################################
 #    Annotation properties
@@ -37,16 +37,34 @@ dcterms:license rdf:type owl:AnnotationProperty .
 #    Classes
 #################################################################
 
+###  http://emmo.info/emmo#EMMO_12e2f253_caeb_4e3c_9749_edb3683ab732
+emmo:EMMO_12e2f253_caeb_4e3c_9749_edb3683ab732 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty emmo:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 ;
+                                                                 owl:someValuesFrom :EMMO_67064447_41e7_42b2_8b58_7a3db87eece7
+                                                               ] .
+
+
+###  http://emmo.info/emmo#EMMO_ebcd70ca_c439_46ab_8bcc_c77b3930d9d9
+emmo:EMMO_ebcd70ca_c439_46ab_8bcc_c77b3930d9d9 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty emmo:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 ;
+                                                                 owl:someValuesFrom :EMMO_67064447_41e7_42b2_8b58_7a3db87eece7
+                                                               ] .
+
+
 ###  https://big-map.github.io/BattINFO/ontology/BattINFO#EMMO_aafe33ca_3fe3_4ff0_bed0_e7c925e26eba
 <https://big-map.github.io/BattINFO/ontology/BattINFO#EMMO_aafe33ca_3fe3_4ff0_bed0_e7c925e26eba> rdf:type owl:Class ;
-                                                                      rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                                                        owl:onProperty emmo:EMMO_16b510a6_0584_4134_bdb6_3bc185c17860 ;
-                                                                                        owl:hasValue :EMMO_405dd1bc_8f22_41ad_9a17_e82946d91494
-                                                                                      ] ,
-                                                                                      [ rdf:type owl:Restriction ;
-                                                                                        owl:onProperty emmo:EMMO_16b510a6_0584_4134_bdb6_3bc185c17860 ;
-                                                                                        owl:hasValue :EMMO_6c1725c6_4c38_4774_8e39_1f3e76556359
-                                                                                      ] .
+                                                                                                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                                                   owl:onProperty emmo:EMMO_16b510a6_0584_4134_bdb6_3bc185c17860 ;
+                                                                                                                   owl:hasValue :EMMO_405dd1bc_8f22_41ad_9a17_e82946d91494
+                                                                                                                 ] ,
+                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                   owl:onProperty emmo:EMMO_16b510a6_0584_4134_bdb6_3bc185c17860 ;
+                                                                                                                   owl:hasValue :EMMO_6c1725c6_4c38_4774_8e39_1f3e76556359
+                                                                                                                 ] .
+
+
+###  https://big-map.github.io/BattINFO/ontology/electrochemistry/electrochemicalquantities#EMMO_54e8cef6_b4cb_4560_947a_50811fa0f177
+<https://big-map.github.io/BattINFO/ontology/electrochemistry/electrochemicalquantities#EMMO_54e8cef6_b4cb_4560_947a_50811fa0f177> rdf:type owl:Class .
 
 
 ###  https://big-map.github.io/LabNotebookAppOntology#EMMO_11678b27_0c12_46d4_a0f4_c20e1df6084f
@@ -101,6 +119,16 @@ dcterms:license rdf:type owl:AnnotationProperty .
                                            skos:prefLabel "StartDate"@en .
 
 
+###  https://big-map.github.io/LabNotebookAppOntology#EMMO_6286fe93_102f_4a94_b1e0_b6dbd5234270
+:EMMO_6286fe93_102f_4a94_b1e0_b6dbd5234270 rdf:type owl:Class ;
+                                           owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ;
+                                                                 owl:hasValue "T-4 L+2 M+1 I-1 Θ0 N0 J0"
+                                                               ] ;
+                                           rdfs:subClassOf emmo:EMMO_9895a1b4_f0a5_4167_ac5e_97db40b8bfcc ;
+                                           skos:prefLabel "VoltagePerTimeDimension" .
+
+
 ###  https://big-map.github.io/LabNotebookAppOntology#EMMO_67064447_41e7_42b2_8b58_7a3db87eece7
 :EMMO_67064447_41e7_42b2_8b58_7a3db87eece7 rdf:type owl:Class ;
                                            rdfs:subClassOf emmo:EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106 ,
@@ -116,22 +144,32 @@ dcterms:license rdf:type owl:AnnotationProperty .
                                            skos:prefLabel "Millimetre"@en .
 
 
-###  https://big-map.github.io/BattINFO/ontology/emmo#EMMO_12e2f253_caeb_4e3c_9749_edb3683ab732
-emmo:EMMO_12e2f253_caeb_4e3c_9749_edb3683ab732 rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty emmo:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 ;
-                                                                 owl:someValuesFrom :EMMO_67064447_41e7_42b2_8b58_7a3db87eece7
-                                                               ] .
+###  https://big-map.github.io/LabNotebookAppOntology#EMMO_92cd597a_31d2_45cf_ad5a_8bf2bb2339a4
+:EMMO_92cd597a_31d2_45cf_ad5a_8bf2bb2339a4 rdf:type owl:Class ;
+                                           owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ;
+                                                                 owl:hasValue "T-1 L0 M0 I0 Θ0 N0 J0"
+                                                               ] ;
+                                           rdfs:subClassOf emmo:EMMO_9895a1b4_f0a5_4167_ac5e_97db40b8bfcc ;
+                                           skos:prefLabel "InverseTimeDimension" .
 
 
-###  https://big-map.github.io/BattINFO/ontology/emmo#EMMO_ebcd70ca_c439_46ab_8bcc_c77b3930d9d9
-emmo:EMMO_ebcd70ca_c439_46ab_8bcc_c77b3930d9d9 rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty emmo:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 ;
-                                                                 owl:someValuesFrom :EMMO_67064447_41e7_42b2_8b58_7a3db87eece7
-                                                               ] .
+###  https://big-map.github.io/LabNotebookAppOntology#EMMO_c963192c_5138_40fa_9d03_9579479295e1
+:EMMO_c963192c_5138_40fa_9d03_9579479295e1 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A battery's C Rating is defined by the rate of time in which it takes to charge."@en ;
+                                           emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Electric_battery#C_rate" ;
+                                           emmo:EMMO_de178b12_5d35_4bca_8efa_a4193162571d "\"T-2 L+2 M0 I0 Θ0 N0 J0\""@en ;
+                                           rdfs:comment "C-Rate is defined as the CurrentDensity divided by the ActiveMaterialLoading and the experimental capacity."@en ;
+                                           skos:prefLabel "CRate" .
 
 
-###  https://big-map.github.io/BattINFO/ontology/electrochemistry/electrochemicalquantities#EMMO_54e8cef6_b4cb_4560_947a_50811fa0f177
-<https://big-map.github.io/BattINFO/ontology/electrochemistry/electrochemicalquantities#EMMO_54e8cef6_b4cb_4560_947a_50811fa0f177> rdf:type owl:Class .
+###  https://big-map.github.io/LabNotebookAppOntology#EMMO_eae3947e_5078_4364_8b58_058a380f03fb
+:EMMO_eae3947e_5078_4364_8b58_058a380f03fb rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The rate of the battery voltage change over time."@en ;
+                                           emmo:EMMO_de178b12_5d35_4bca_8efa_a4193162571d "\"T-4 L+2 M+1 I-1 Θ0 N0 J0\""@en ;
+                                           skos:prefLabel "ScanRate" .
 
 
 #################################################################
