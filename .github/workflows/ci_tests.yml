@@ -27,6 +27,6 @@ jobs:
 
     - name: Run EMMO Check
       run: |
-        emmocheck --verbose --check-imported --url-from-catalog \
+        emmocheck --verbose --url-from-catalog \
           --configfile=.github/utils/emmocheck_config.yml \
           LabNotebookAppOntology.ttl
