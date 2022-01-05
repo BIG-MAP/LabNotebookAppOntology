@@ -26,7 +26,4 @@ jobs:
       run: git clone -b LabNotebookAppOntology https://github.com/BIG-MAP/BattINFO.git ${GITHUB_WORKSPACE}/../BattINFO
 
     - name: Run EMMO Check
-      run: |
-        emmocheck --verbose --url-from-catalog \
-          # --configfile=.github/utils/emmocheck_config.yml \
-          LabNotebookAppOntology.ttl
+      run: emmocheck --verbose --url-from-catalog LabNotebookAppOntology.ttl
