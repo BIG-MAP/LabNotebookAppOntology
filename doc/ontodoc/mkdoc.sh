@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 # Bash script for generating documentation
 set -ex
 

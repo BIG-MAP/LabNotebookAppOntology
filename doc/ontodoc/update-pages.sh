@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 # Bash script for uploading generated documentation to GitHub Pages
 set -ex
 
@@ -9,7 +9,7 @@ tmpdir=${ontodocdir}/${TMP_DIR}
 pagesdir=${tmpdir}/${PAGES_DIR}
 
 # Generate documentation
-# ${ontodocdir}/mkdoc.sh
+${ontodocdir}/mkdoc.sh
 
 if [ "$1" = "TEST" ]; then
     echo "Not publishing - just testing (for CI)."
@@ -19,7 +19,7 @@ fi
 # Checkout gh-pages
 if ! [ -d ${pagesdir} ]; then
     git clone --branch=gh-pages --single-branch \
-        git@github.com:BIG-MAP/BattINFO.git ${pagesdir}
+        https://github.com/BIG-MAP/LabNotebookAppOntology.git ${pagesdir}
     git config pull.rebase false
 fi
 
@@ -29,11 +29,11 @@ git pull origin gh-pages
 
 # Copy documentation to gh-pages
 # FIXME - generate separate index.html with links to versions
-# cp -u ${tmpdir}/battinfo.html index.html
-# cp -u ${tmpdir}/battinfo.pdf .
+cp -u ${tmpdir}/LabNotebookAppOntology.html index.html
+cp -u ${tmpdir}/LabNotebookAppOntology.pdf .
 
 # Update gh-pages
-if git add index.html battinfo.pdf ${PUBLISH_ONTOLOGIES_DIR}; then
-    git commit -m "Update BattINFO documentation & ontologies"
+if git add index.html LabNotebookAppOntology.pdf ${PUBLISH_ONTOLOGIES_DIR}; then
+    git commit -m "Update LabNotebookAppOntology documentation"
     git push origin gh-pages
 fi
