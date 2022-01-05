@@ -6,7 +6,7 @@ set -ex
 rootdir=$(git rev-parse --show-toplevel)
 ontodocdir=${rootdir}/${ONTODOC_DIR}
 tmpdir=${ontodocdir}/${TMP_DIR}
-pagesdir=${tmpdir}/${PAGES_DIR}
+pagesdir=${GITHUB_WORKSPACE}/../${PAGES_DIR}
 
 # Generate documentation
 if [ "$1" != "ALREADY_BUILT" ]; then
@@ -18,27 +18,30 @@ if [ "$1" = "TEST" ]; then
     exit
 fi
 
-# Checkout gh-pages
-if ! [ -d ${pagesdir} ]; then
-    git clone --branch=gh-pages --single-branch \
-        https://github.com/BIG-MAP/LabNotebookAppOntology ${pagesdir}
-    git config pull.rebase false
-fi
-
-# Update local copy of gh-pages
-cd ${pagesdir}
-git pull origin gh-pages
+# # Checkout gh-pages
+# if ! [ -d ${pagesdir} ]; then
+#     git clone --branch=gh-pages --single-branch \
+#         https://github.com/BIG-MAP/LabNotebookAppOntology ${pagesdir}
+#     git config pull.rebase false
+# fi
 
 # Copy documentation to gh-pages
 # FIXME - generate separate index.html with links to versions
-cp -u ${tmpdir}/LabNotebookAppOntology.html index.html
-cp -u ${tmpdir}/LabNotebookAppOntology.pdf .
+mkdir -p ${pagesdir}
+cp -f ${tmpdir}/LabNotebookAppOntology.html ${pagesdir}/index.html
+cp -f ${tmpdir}/LabNotebookAppOntology.pdf ${pagesdir}/
+
+# Checkout gh-pages
+cd ${GITHUB_WORKSPACE}
+git checkout -f gh-pages
+
+cp -f ${pagesdir}/index.html .
+cp -f ${pagesdir}/LabNotebookAppOntology.pdf .
 
 # Update gh-pages
 if [ -n "$(git status --porcelain index.html LabNotebookAppOntology.pdf)" ]; then
     git add index.html LabNotebookAppOntology.pdf
     git commit -m "Update LabNotebookAppOntology documentation"
-    git push origin gh-pages
 else
     echo "No changes to commit."
 fi
