@@ -136,6 +136,7 @@ electrochemistry:EMMO_e8e41092_cc75_4952_bc54_af1a72d19fcd rdfs:subClassOf [ rdf
                                                                                  owl:someValuesFrom xsd:string
                                                                                ]
                                                            ] ;
+                                           emmo:EMMO_de178b12_5d35_4bca_8efa_a4193162571d "T+1 L0 M0 I0 Θ0 N0 J0" ;
                                            rdfs:comment "Expressed as YYYY.MM.DD"@en ;
                                            skos:prefLabel "Date"@en .
 
@@ -163,6 +164,7 @@ electrochemistry:EMMO_e8e41092_cc75_4952_bc54_af1a72d19fcd rdfs:subClassOf [ rdf
                                                              owl:onProperty emmo:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 ;
                                                              owl:someValuesFrom :EMMO_2a62748d_fd28_4c5b_88bb_fa583780bf82
                                                            ] ;
+                                           emmo:EMMO_de178b12_5d35_4bca_8efa_a4193162571d "T0 L-3 M0 I0 Θ0 N0 J0" ;
                                            skos:prefLabel "BatteryCellElectrolyteVolume"@en .
 
 
@@ -250,6 +252,7 @@ electrochemistry:EMMO_e8e41092_cc75_4952_bc54_af1a72d19fcd rdfs:subClassOf [ rdf
 ###  https://big-map.github.io/LabNotebookAppOntology#EMMO_46824062_cced_46c5_89ed_f214a5e7c245
 :EMMO_46824062_cced_46c5_89ed_f214a5e7c245 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_11678b27_0c12_46d4_a0f4_c20e1df6084f ;
+                                           emmo:EMMO_de178b12_5d35_4bca_8efa_a4193162571d "T+1 L0 M0 I0 Θ0 N0 J0" ;
                                            skos:prefLabel "EndDate"@en .
 
 
@@ -262,6 +265,7 @@ electrochemistry:EMMO_e8e41092_cc75_4952_bc54_af1a72d19fcd rdfs:subClassOf [ rdf
 ###  https://big-map.github.io/LabNotebookAppOntology#EMMO_5538a30d_1e16_41fd_8e90_009aa53d07db
 :EMMO_5538a30d_1e16_41fd_8e90_009aa53d07db rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_11678b27_0c12_46d4_a0f4_c20e1df6084f ;
+                                           emmo:EMMO_de178b12_5d35_4bca_8efa_a4193162571d "T+1 L0 M0 I0 Θ0 N0 J0" ;
                                            skos:prefLabel "StartDate"@en .
 
 
