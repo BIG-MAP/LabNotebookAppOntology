@@ -334,12 +334,6 @@ electrochemistry:EMMO_e8e41092_cc75_4952_bc54_af1a72d19fcd rdfs:subClassOf [ rdf
                                            skos:prefLabel "HomemadeBatteryCell"@en .
 
 
-###  https://big-map.github.io/LabNotebookAppOntology#EMMO_790b6a04_c504_4ea8_938e_371943156b33
-:EMMO_790b6a04_c504_4ea8_938e_371943156b33 rdf:type owl:Class ;
-                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "This is a simple test class to see if it is in the documentation."@en ;
-                                           skos:prefLabel "TestClass"@en .
-
-
 ###  https://big-map.github.io/LabNotebookAppOntology#EMMO_7d7808c5_e5e8_4c20_b5c9_a7748349c802
 :EMMO_7d7808c5_e5e8_4c20_b5c9_a7748349c802 rdf:type owl:Class ;
                                            rdfs:subClassOf emmo:EMMO_3ee80521_3c23_4dd1_935d_9d522614a3e2 ,
