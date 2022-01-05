@@ -35,7 +35,7 @@ cp -u ${tmpdir}/LabNotebookAppOntology.html index.html
 cp -u ${tmpdir}/LabNotebookAppOntology.pdf .
 
 # Update gh-pages
-if git add index.html LabNotebookAppOntology.pdf ${PUBLISH_ONTOLOGIES_DIR}; then
+if git add index.html LabNotebookAppOntology.pdf; then
     git commit -m "Update LabNotebookAppOntology documentation"
     git push origin gh-pages
 fi
