@@ -72,5 +72,11 @@ jobs:
         chmod 755 ${GITHUB_WORKSPACE}/${ONTODOC_DIR}/*
         ${GITHUB_WORKSPACE}/${ONTODOC_DIR}/update-pages.sh TEST
 
-    - name: Update GitHub Pages
+    - name: Update GitHub Pages branch
       run: ${GITHUB_WORKSPACE}/${ONTODOC_DIR}/update-pages.sh ALREADY_BUILT
+
+    - name: Push to GitHub
+      uses: CasperWA/push-protected@v2
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        branch: gh-pages

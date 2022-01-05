@@ -18,24 +18,29 @@ if [ "$1" = "TEST" ]; then
     exit
 fi
 
-# Checkout gh-pages
-if ! [ -d ${pagesdir} ]; then
-    git clone --branch=gh-pages --single-branch \
-        https://github.com/BIG-MAP/LabNotebookAppOntology ${pagesdir}
-    git config pull.rebase false
-fi
+# # Checkout gh-pages
+# if ! [ -d ${pagesdir} ]; then
+#     git clone --branch=gh-pages --single-branch \
+#         https://github.com/BIG-MAP/LabNotebookAppOntology ${pagesdir}
+#     git config pull.rebase false
+# fi
 
 # Copy documentation to gh-pages
 # FIXME - generate separate index.html with links to versions
 cp -f ${tmpdir}/LabNotebookAppOntology.html ${pagesdir}/index.html
 cp -f ${tmpdir}/LabNotebookAppOntology.pdf ${pagesdir}/
 
+# Checkout gh-pages
+cd ${GITHUB_WORKSPACE}
+git checkout gh-pages
+
+cp -f ${pagesdir}/index.html .
+cp -f ${pagesdir}/LabNotebookAppOntology.pdf .
+
 # Update gh-pages
-cd ${pagesdir}
 if [ -n "$(git status --porcelain index.html LabNotebookAppOntology.pdf)" ]; then
     git add index.html LabNotebookAppOntology.pdf
     git commit -m "Update LabNotebookAppOntology documentation"
-    git push origin gh-pages
 else
     echo "No changes to commit."
 fi
