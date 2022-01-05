@@ -21,7 +21,7 @@ fi
 # Checkout gh-pages
 if ! [ -d ${pagesdir} ]; then
     git clone --branch=gh-pages --single-branch \
-        https://github.com/BIG-MAP/LabNotebookAppOntology.git ${pagesdir}
+        https://github.com/BIG-MAP/LabNotebookAppOntology ${pagesdir}
     git config pull.rebase false
 fi
 
