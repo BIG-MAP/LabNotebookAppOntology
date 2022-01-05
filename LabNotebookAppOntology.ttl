@@ -97,6 +97,12 @@ electrochemistry:EMMO_e8e41092_cc75_4952_bc54_af1a72d19fcd rdfs:subClassOf [ rdf
                                                                            ] .
 
 
+###  https://big-map.github.io/LabNotebookAppOntology#EMMO_0064d879_ca4c_4258_8799_d7d8e6684159
+:EMMO_0064d879_ca4c_4258_8799_d7d8e6684159 rdf:type owl:Class ;
+                                           rdfs:subClassOf bigmap:EMMO_77fc28f8_a045_4cb9_984a_2804feef4bd6 ;
+                                           skos:prefLabel "CarbonAdditiveName"@en .
+
+
 ###  https://big-map.github.io/LabNotebookAppOntology#EMMO_06611705_c0ad_40ea_b1d6_84c000ef9e88
 :EMMO_06611705_c0ad_40ea_b1d6_84c000ef9e88 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_19c2342d_2f7b_41b1_9855_7f39fcff294d ;
@@ -245,6 +251,12 @@ electrochemistry:EMMO_e8e41092_cc75_4952_bc54_af1a72d19fcd rdfs:subClassOf [ rdf
                                            skos:prefLabel "SuppliedElectrode"@en .
 
 
+###  https://big-map.github.io/LabNotebookAppOntology#EMMO_3dbb5afa_b61c_4294_aec4_e048350483ec
+:EMMO_3dbb5afa_b61c_4294_aec4_e048350483ec rdf:type owl:Class ;
+                                           rdfs:subClassOf bigmap:EMMO_7fc6941c_0c7b_4d29_bb75_ddcb884156dd ;
+                                           skos:prefLabel "CarbonAdditiveManufacturer"@en .
+
+
 ###  https://big-map.github.io/LabNotebookAppOntology#EMMO_46824062_cced_46c5_89ed_f214a5e7c245
 :EMMO_46824062_cced_46c5_89ed_f214a5e7c245 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_11678b27_0c12_46d4_a0f4_c20e1df6084f ;
@@ -256,6 +268,12 @@ electrochemistry:EMMO_e8e41092_cc75_4952_bc54_af1a72d19fcd rdfs:subClassOf [ rdf
 :EMMO_517b056d_d3eb_409f_8ff8_d0aad1bc140f rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_19c2342d_2f7b_41b1_9855_7f39fcff294d ;
                                            skos:prefLabel "NegativeHomemadeElectrode"@en .
+
+
+###  https://big-map.github.io/LabNotebookAppOntology#EMMO_51c36513_efd6_44d9_8c12_5615d5529237
+:EMMO_51c36513_efd6_44d9_8c12_5615d5529237 rdf:type owl:Class ;
+                                           rdfs:subClassOf bigmap:EMMO_77fc28f8_a045_4cb9_984a_2804feef4bd6 ;
+                                           skos:prefLabel "BinderName"@en .
 
 
 ###  https://big-map.github.io/LabNotebookAppOntology#EMMO_5538a30d_1e16_41fd_8e90_009aa53d07db
@@ -344,6 +362,12 @@ electrochemistry:EMMO_e8e41092_cc75_4952_bc54_af1a72d19fcd rdfs:subClassOf [ rdf
                                            skos:prefLabel "MilliGramPerSquareCentimetre"@en .
 
 
+###  https://big-map.github.io/LabNotebookAppOntology#EMMO_82dad0b9_d022_4038_b900_9fa4b4298548
+:EMMO_82dad0b9_d022_4038_b900_9fa4b4298548 rdf:type owl:Class ;
+                                           rdfs:subClassOf bigmap:EMMO_7fc6941c_0c7b_4d29_bb75_ddcb884156dd ;
+                                           skos:prefLabel "BinderManufacturer"@en .
+
+
 ###  https://big-map.github.io/LabNotebookAppOntology#EMMO_97fe42e9_995f_4efc_a458_dbb4a419fc91
 :EMMO_97fe42e9_995f_4efc_a458_dbb4a419fc91 rdf:type owl:Class ;
                                            rdfs:subClassOf emmo:EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1 ;
@@ -394,6 +418,12 @@ electrochemistry:EMMO_e8e41092_cc75_4952_bc54_af1a72d19fcd rdfs:subClassOf [ rdf
                                            skos:prefLabel "PrimaryParticle"@en .
 
 
+###  https://big-map.github.io/LabNotebookAppOntology#EMMO_b0f1e133_c627_4797_8fe3_6811048c3cd2
+:EMMO_b0f1e133_c627_4797_8fe3_6811048c3cd2 rdf:type owl:Class ;
+                                           rdfs:subClassOf bigmap:EMMO_7fc6941c_0c7b_4d29_bb75_ddcb884156dd ;
+                                           skos:prefLabel "ActiveMaterialManufacturer"@en .
+
+
 ###  https://big-map.github.io/LabNotebookAppOntology#EMMO_b2459d59_1732_4d0a_9b5a_9f8634e73480
 :EMMO_b2459d59_1732_4d0a_9b5a_9f8634e73480 rdf:type owl:Class ;
                                            rdfs:subClassOf electrochemistry:EMMO_79d1b273-58cd-4be6-a250-434817f7c261 ;
@@ -442,6 +472,13 @@ electrochemistry:EMMO_e8e41092_cc75_4952_bc54_af1a72d19fcd rdfs:subClassOf [ rdf
                                                            ] ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Aggregate of primary particles."@en ;
                                            skos:prefLabel "SecondaryParticle"@en .
+
+
+###  https://big-map.github.io/LabNotebookAppOntology#EMMO_e78e99d3_2121_42a8_a836_e8999100299c
+:EMMO_e78e99d3_2121_42a8_a836_e8999100299c rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ;
+                                           emmo:EMMO_de178b12_5d35_4bca_8efa_a4193162571d "T0 L0 M0 I0 Θ0 N0 J0" ;
+                                           skos:prefLabel "WeightRatio"@en .
 
 
 ###  https://big-map.github.io/LabNotebookAppOntology#EMMO_f0e4c8bf_09c8_4bb5_89fa_dbba5c55e8e8
