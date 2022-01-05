@@ -477,6 +477,7 @@ electrochemistry:EMMO_e8e41092_cc75_4952_bc54_af1a72d19fcd rdfs:subClassOf [ rdf
 ###  https://big-map.github.io/LabNotebookAppOntology#EMMO_e78e99d3_2121_42a8_a836_e8999100299c
 :EMMO_e78e99d3_2121_42a8_a836_e8999100299c rdf:type owl:Class ;
                                            rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ;
+                                           emmo:EMMO_de178b12_5d35_4bca_8efa_a4193162571d "T0 L0 M0 I0 Θ0 N0 J0" ;
                                            skos:prefLabel "WeightRatio"@en .
 
 
