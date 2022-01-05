@@ -27,6 +27,7 @@ fi
 
 # Copy documentation to gh-pages
 # FIXME - generate separate index.html with links to versions
+mkdir -p ${pagesdir}
 cp -f ${tmpdir}/LabNotebookAppOntology.html ${pagesdir}/index.html
 cp -f ${tmpdir}/LabNotebookAppOntology.pdf ${pagesdir}/
 
