@@ -25,17 +25,14 @@ if ! [ -d ${pagesdir} ]; then
     git config pull.rebase false
 fi
 
-# Update local copy of gh-pages
-cd ${pagesdir}
-git pull origin gh-pages
-
 # Copy documentation to gh-pages
 # FIXME - generate separate index.html with links to versions
-cp -u ${tmpdir}/LabNotebookAppOntology.html index.html
-cp -u ${tmpdir}/LabNotebookAppOntology.pdf .
+cp -f ${tmpdir}/LabNotebookAppOntology.html ${pagesdir}/index.html
+cp -f ${tmpdir}/LabNotebookAppOntology.pdf ${pagesdir}/
 
 # Update gh-pages
-if [ -n "$(git status --porcelain index.html LabNotebookAppOntology.pdf)" ]; then
+if [ -n "$(git status --porcelain ${pagesdir}/index.html ${pagesdir}/LabNotebookAppOntology.pdf)" ]; then
+    cd ${pagesdir}
     git add index.html LabNotebookAppOntology.pdf
     git commit -m "Update LabNotebookAppOntology documentation"
     git push origin gh-pages
