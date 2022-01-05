@@ -72,8 +72,10 @@ jobs:
         git config --global user.email "${GIT_USER_EMAIL}"
         git config --global user.name "${GIT_USER_NAME}"
 
+    - name: Retrieve BattINFO
+      run: git clone -b LabNotebookAppOntology https://github.com/BIG-MAP/BattINFO.git ${GITHUB_WORKSPACE}/../BattINFO
+
     - name: Update GitHub Pages
       run: |
         chmod 755 ${GITHUB_WORKSPACE}/${ONTODOC_DIR}/*
-        ls -lah ${GITHUB_WORKSPACE}/${ONTODOC_DIR}
         ${GITHUB_WORKSPACE}/${ONTODOC_DIR}/update-pages.sh TEST
