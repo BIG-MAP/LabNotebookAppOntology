@@ -6,7 +6,7 @@ set -ex
 rootdir=$(git rev-parse --show-toplevel)
 ontodocdir=${rootdir}/${ONTODOC_DIR}
 tmpdir=${ontodocdir}/${TMP_DIR}
-pagesdir=${tmpdir}/${PAGES_DIR}
+pagesdir=${GITHUB_WORKSPACE}/../${PAGES_DIR}
 
 # Generate documentation
 if [ "$1" != "ALREADY_BUILT" ]; then
@@ -31,8 +31,8 @@ cp -f ${tmpdir}/LabNotebookAppOntology.html ${pagesdir}/index.html
 cp -f ${tmpdir}/LabNotebookAppOntology.pdf ${pagesdir}/
 
 # Update gh-pages
-if [ -n "$(git status --porcelain ${pagesdir}/index.html ${pagesdir}/LabNotebookAppOntology.pdf)" ]; then
-    cd ${pagesdir}
+cd ${pagesdir}
+if [ -n "$(git status --porcelain index.html LabNotebookAppOntology.pdf)" ]; then
     git add index.html LabNotebookAppOntology.pdf
     git commit -m "Update LabNotebookAppOntology documentation"
     git push origin gh-pages
