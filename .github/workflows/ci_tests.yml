@@ -81,5 +81,5 @@ jobs:
         ${GITHUB_WORKSPACE}/${ONTODOC_DIR}/update-pages.sh TEST
 
     - name: Update GitHub Pages
+      if: github.ref == 'refs/heads/main'
       run: ${GITHUB_WORKSPACE}/${ONTODOC_DIR}/update-pages.sh ALREADY_BUILT
-      # if: github.ref == 'refs/heads/main'
