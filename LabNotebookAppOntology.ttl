@@ -369,13 +369,6 @@ electrochemistry:EMMO_e8e41092_cc75_4952_bc54_af1a72d19fcd rdfs:subClassOf [ rdf
                                            skos:prefLabel "Micrometre"@en .
 
 
-###  https://big-map.github.io/LabNotebookAppOntology#EMMO_aa0c9958_14d7_4b47_a950_c76daa79d825
-:EMMO_aa0c9958_14d7_4b47_a950_c76daa79d825 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_d9f9005f_90c0_4de4_93c4_1fb2abe6ae86 ;
-                                           emmo:EMMO_de178b12_5d35_4bca_8efa_a4193162571d "T0 L0 M0 I0 Θ0 N0 J0" ;
-                                           skos:prefLabel "PercentUnit"@en .
-
-
 ###  https://big-map.github.io/LabNotebookAppOntology#EMMO_ac3d4dee_f90c_4978_8fb7_cffb86974eec
 :EMMO_ac3d4dee_f90c_4978_8fb7_cffb86974eec rdf:type owl:Class ;
                                            rdfs:subClassOf emmo:EMMO_9895a1b4_f0a5_4167_ac5e_97db40b8bfcc ,
@@ -449,13 +442,6 @@ electrochemistry:EMMO_e8e41092_cc75_4952_bc54_af1a72d19fcd rdfs:subClassOf [ rdf
                                                            ] ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Aggregate of primary particles."@en ;
                                            skos:prefLabel "SecondaryParticle"@en .
-
-
-###  https://big-map.github.io/LabNotebookAppOntology#EMMO_d9f9005f_90c0_4de4_93c4_1fb2abe6ae86
-:EMMO_d9f9005f_90c0_4de4_93c4_1fb2abe6ae86 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_3a894406_d68f_4552_99ae_1ffc3ce15b87 ;
-                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Represents the number 100, used as an explicit unit to say something has no units."@en ;
-                                           skos:prefLabel "UnitOneHundred"@en .
 
 
 ###  https://big-map.github.io/LabNotebookAppOntology#EMMO_f0e4c8bf_09c8_4bb5_89fa_dbba5c55e8e8
