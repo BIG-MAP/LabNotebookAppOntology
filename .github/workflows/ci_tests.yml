@@ -75,7 +75,11 @@ jobs:
     - name: Retrieve BattINFO
       run: git clone -b LabNotebookAppOntology https://github.com/BIG-MAP/BattINFO.git ${GITHUB_WORKSPACE}/../BattINFO
 
-    - name: Update GitHub Pages
+    - name: Test building GitHub Pages documentation
       run: |
         chmod 755 ${GITHUB_WORKSPACE}/${ONTODOC_DIR}/*
         ${GITHUB_WORKSPACE}/${ONTODOC_DIR}/update-pages.sh TEST
+
+    - name: Update GitHub Pages
+      if: ${{ github.ref_name }} == 'main'
+      run: ${GITHUB_WORKSPACE}/${ONTODOC_DIR}/update-pages.sh ALREADY_BUILT
