@@ -33,7 +33,7 @@ cp -f ${tmpdir}/LabNotebookAppOntology.pdf ${pagesdir}/
 
 # Checkout gh-pages
 cd ${GITHUB_WORKSPACE}
-git checkout gh-pages
+git checkout -f gh-pages
 
 cp -f ${pagesdir}/index.html .
 cp -f ${pagesdir}/LabNotebookAppOntology.pdf .
