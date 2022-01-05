@@ -66,8 +66,6 @@ jobs:
         cd ${GITHUB_WORKSPACE}
         git config --global user.email "${GIT_USER_EMAIL}"
         git config --global user.name "${GIT_USER_NAME}"
-    - name: Publish ontologies
-      run: python ${GITHUB_WORKSPACE}/.github/utils/publish_ontologies.py
 
     - name: Update GitHub Pages
       run: ${GITHUB_WORKSPACE}/${ONTODOC_DIR}/update-pages.sh TEST
